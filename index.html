@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header data-test="header">
+    <header datatest="header" >
        <a href="index.html"> <img src="#" alt="Логотип CITY OF SEDONA">
         </a>
         <ul>
@@ -21,7 +21,7 @@
             <a href="#">Хочу сюда!</a></li>
            <p><img src="#" alt="Логотип WELCOMT TO THE SEDONA"></header></p>
 
-    <main data-test="main">
+    <main datatest="main">
         <h1>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
         <p>Рассмотрим причины,по которым Седона круче,чем Гранд-Каньон!</p>
       <ul>
@@ -67,13 +67,20 @@
 
 
     </main>
-    <footer data-test="footer">
-        <h4>Подпишитесь на рассылку</h4>
+    <footer datatest="footer">
+      <section class="newsletter">
+        <h4 class="page-footer-title">Подпишитесь на рассылку</h4>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label>
+<form class="newsletter-form" action="https:echo.htmlacademy.ru/" method="post">
 
-             <input type="text" name="username">
-</label>>
+
+             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+<button class="button newsletter-button" type="submit">
+  <span class="visually-hidden">Подписаться</span>
+</button>
+</form>
+      </section>
+
           <ul>
             <li></li>
             <li></li>
