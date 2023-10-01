@@ -22,11 +22,180 @@
            </header>
 
     <main data-test="main">
+      <h1>Гостиницы Седоны</h1>
+      <ul>
+        <li>Вернуться на главную</li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+
+      <h1>Фильтр поиска жилья</h1>
+
+    <table border="1">
+      <tr>
+        <td>Инфраструктура:</td>
+        <td>Тип Жилья:</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Бассейн</label></td>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Гостиница</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Парковка</label></td>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Мотель</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Wi-Fi</label></td>
+        <td><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Апартаменты</label></td>
+      </tr>
+    </table>
+    <p>Стоимость, ₽</p>
+    <p>
+    <div class="price-input">
+      <div class="field">
+        <span>Min</span>
+        <input type="number" class="input-min" value="0">
+    </p>
+      <div class="field">
+        <span>Max</span>
+        <input type="number" class="input-max" value="9000">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+
+  </div>
+  <button class="button-submit" type="submit">Применить</button>
+  <button class="button-reset" type="button">Сбросить</button>
+  <h2>Найдено гостиниц:38<h2>
+    <form class="sorting" action="https://htmlacademy.ru/" method="get">
+      <select class="select-control" aria-label="Сортировка">
+        <option selected="">Сначала дешевые</option>
+        <option>Сначала дороже</option>
+        <option>По популярности</option>
+      </select>
+  </form>
+  <ul>
+    <li><button>Мелкие значки</button></li>
+    <li><button>Крупные значки</button></li>
+    <li><button>Содержимое</button></li>
+  </ul>
+  <section>
+  <ul>
+
+    <li> <a href="#"> <img src="#" alt="Вид на звезды сквозь горное ущелье">
+    </a></li>
+  </ul>
+
+  <p>
+    <a href="#">Amara Resort&Spa</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 4000</span></p>
+  <ul>
+    <li><button>Подробнее</button></li>
+    <li><button>В ИЗБРАННОЕ</button></li>
+    <li><button>4 звезды</button></li>
+    <li><button>рейтинг 8.5</button></li>
+  </ul>
+
+</section>
+<section>
+  <ul>
+
+    <li> <a href="#"><img src="#" alt="Восход солнца из-за гор с выходящей радугой">
+    </a></li>
+  </ul>
+
+  <p>
+    <a href="#">Villas at Poco Diablo</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 5000</span></p>
+  <ul>
+    <li><button>Подробнее</button></li>
+    <li><button>В ИЗБРАННОЕ</button></li>
+    <li><button>4 звезды</button></li>
+    <li><button>рейтинг 9.2</button></li>
+  </ul>
+
+</section>
+<section>
+  <ul>
+
+    <li> <a href="#"><img src="#" alt="Горный хребет усыпанный зеленью.">
+    </a></li>
+  </ul>
+
+  <p>
+    <a href="#">Desert Quail Inn</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 2500</span></p>
+  <ul>
+    <li><button>Подробнее</button></li>
+    <li><button>В ИЗБРАННОЕ</button></li>
+    <li><button>3 звезды</button></li>
+    <li><button>рейтинг 6.9</button></li>
+  </ul>
+
+</section>
+<section>
+  <ul>
+
+    <li> <a href="#"><img src="#" alt="Ночной вид на горный хребет в оранжевом отливе.">
+    </a></li>
+  </ul>
+
+  <p>
+    <a href="#">GreenTree Inn</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 1500</span></p>
+  <ul>
+    <li><button>Подробнее</button></li>
+    <li><button>В ИЗБРАННОЕ</button></li>
+    <li><button>2 звезды</button></li>
+    <li><button>рейтинг 5.0</button></li>
+  </ul>
+
+</section>
+<ul>
+  <li>
+    <a href="#"> 1</a>
+  </li>
+  <li>
+    <a href="#"> 2</a>
+  </li><li>
+    <a href="#"> 3</a>
+  </li><li>
+    <a href="#"> 4</a>
+  </li><li>
+    <a href="#"> ...</a>
+  </li><li>
+    <a href="#"> 10</a>
+  </li>
+</ul>
 
 
     </main>
     <footer data-test="footer">
+      <ul>
+        <li><a href="https:vk.ru/">VK</a></li>
+        <li><a href="https:Telegram.org/">Telegram</a></li>
+        <li><a href="https:Youtube.ru/">Youtube</a></li>
 
+
+      </ul>
+      <a href="#">+7 (812) 812-12-12</a>
+      <a href="https:htmlacademy.ru/"><img src="#" alt="Логотип HTML ACADEMY">
+        </a>
     </footer>
   </body>
 </html>
