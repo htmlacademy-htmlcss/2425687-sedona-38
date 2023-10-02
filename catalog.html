@@ -29,31 +29,37 @@
       </ul>
 
       <h1>Фильтр поиска жилья</h1>
+      <form name="Фильтр" action="https://echo.htmlacademy.ru/courses" method="post">
 
-    <table border="1">
-      <tr>
-        <td>Инфраструктура:</td>
-        <td>Тип Жилья:</td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
-          <label for="subscribe-field">Бассейн</label></td>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
-          <label for="subscribe-field">Гостиница</label></td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field" checked>
-          <label for="subscribe-field">Парковка</label></td>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field">
-          <label for="subscribe-field">Мотель</label></td>
-      </tr>
-      <tr>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field">
-          <label for="subscribe-field">Wi-Fi</label></td>
-        <td><input type="checkbox" name="subscribe" id="subscribe-field">
-          <label for="subscribe-field">Апартаменты</label></td>
-      </tr>
-    </table>
+
+       <fieldset> <legend>Инфраструктура:</legend>
+<ul>
+       <li> <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Бассейн</label></li>
+          <li><input type="checkbox" name="subscribe" id="subscribe-field" checked>
+            <label for="subscribe-field">Парковка</label></li>
+           <li> <input type="checkbox" name="subscribe" id="subscribe-field">
+              <label for="subscribe-field">Wi-Fi</label></li>
+</ul>
+            </fieldset>
+<fieldset>
+  <legend>Тип жилья:</legend>
+  <ul>
+       <li> <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Гостиница</label></li>
+
+
+        <li><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Мотель</label></li>
+
+
+
+       <li><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Апартаменты</label></li>
+  </ul>
+        </fieldset>
+
+    </form>
     <p>Стоимость, ₽</p>
     <p>
     <div class="price-input">
@@ -82,16 +88,17 @@
       </select>
   </form>
   <ul>
-    <li><button>Мелкие значки</button></li>
-    <li><button>Крупные значки</button></li>
-    <li><button>Содержимое</button></li>
+    <li><button class="button-submit" type="submit">Мелкие значки</button></li>
+    <li><button class="button-submit" type="submit">Крупные значки</button></li>
+    <li><button class="button-submit" type="submit">Содержимое</button></li>
   </ul>
-  <section>
   <ul>
+    <li>
 
-    <li> <a href="#"> <img src="#" alt="Вид на звезды сквозь горное ущелье">
-    </a></li>
-  </ul>
+
+     <a href="#"> <img src="#" alt="Вид на звезды сквозь горное ущелье">
+    </a>
+
 
   <p>
     <a href="#">Amara Resort&Spa</a></li>
@@ -99,19 +106,18 @@
   <p>Гостиница</p>
   <p><span>От 4000</span></p>
   <ul>
-    <li><button>Подробнее</button></li>
-    <li><button>В ИЗБРАННОЕ</button></li>
-    <li><button>4 звезды</button></li>
-    <li><button>рейтинг 8.5</button></li>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">4 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 8.5</button></li>
   </ul>
 
-</section>
-<section>
-  <ul>
+<li>
 
-    <li> <a href="#"><img src="#" alt="Восход солнца из-за гор с выходящей радугой">
-    </a></li>
-  </ul>
+
+  <p>   <a href="#"><img src="#" alt="Восход солнца из-за гор с выходящей радугой">
+    </a></p>
+
 
   <p>
     <a href="#">Villas at Poco Diablo</a></li>
@@ -119,19 +125,19 @@
   <p>Гостиница</p>
   <p><span>От 5000</span></p>
   <ul>
-    <li><button>Подробнее</button></li>
-    <li><button>В ИЗБРАННОЕ</button></li>
-    <li><button>4 звезды</button></li>
-    <li><button>рейтинг 9.2</button></li>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">4 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 9.2</button></li>
   </ul>
 
-</section>
-<section>
-  <ul>
 
-    <li> <a href="#"><img src="#" alt="Горный хребет усыпанный зеленью.">
-    </a></li>
-  </ul>
+<li>
+
+
+    <p> <a href="#"><img src="#" alt="Горный хребет усыпанный зеленью.">
+    </a></p>
+
 
   <p>
     <a href="#">Desert Quail Inn</a></li>
@@ -139,19 +145,17 @@
   <p>Гостиница</p>
   <p><span>От 2500</span></p>
   <ul>
-    <li><button>Подробнее</button></li>
-    <li><button>В ИЗБРАННОЕ</button></li>
-    <li><button>3 звезды</button></li>
-    <li><button>рейтинг 6.9</button></li>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">3 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 6.9</button></li>
   </ul>
 
-</section>
-<section>
-  <ul>
 
-    <li> <a href="#"><img src="#" alt="Ночной вид на горный хребет в оранжевом отливе.">
-    </a></li>
-  </ul>
+<li>
+   <p><a href="#"><img src="#" alt="Ночной вид на горный хребет в оранжевом отливе.">
+    </a></p>
+
 
   <p>
     <a href="#">GreenTree Inn</a></li>
@@ -159,13 +163,13 @@
   <p>Гостиница</p>
   <p><span>От 1500</span></p>
   <ul>
-    <li><button>Подробнее</button></li>
-    <li><button>В ИЗБРАННОЕ</button></li>
-    <li><button>2 звезды</button></li>
-    <li><button>рейтинг 5.0</button></li>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">2 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 5.0</button></li>
   </ul>
 
-</section>
+</ul>
 <ul>
   <li>
     <a href="#"> 1</a>
@@ -186,6 +190,18 @@
 
     </main>
     <footer data-test="footer">
+      <section class="newsletter">
+        <h4 class="page-footer-title">Подпишитесь на рассылку</h4>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+<form class="newsletter-form" action="https:htmlacademy.ru/" method="post">
+
+
+             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+<button class="button newsletter-button" type="submit">
+  <span class="visually-hidden">Подписаться</span>
+</button>
+</form>
+      </section>
       <ul>
         <li><a href="https:vk.ru/">VK</a></li>
         <li><a href="https:Telegram.org/">Telegram</a></li>
