@@ -6,19 +6,31 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header data-test="header" >
-       <a href="index.html"> <img src="#" alt="Логотип CITY OF SEDONA">
+    <header class="page-header" data-test="header" >
+      <nav class="navigation"
+       <a href="index.html"> <img class="logo" src="images/catalog/logo.svg" alt="Логотип CITY OF SEDONA">
         </a>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О Cедоне</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Главная</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Cедоне</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
             </ul>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#">12</a></li>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+                  </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">12</a></li>
+                  <li class="navigation-item"></li>>
+                      <a class="navigation-link" href="#">Хочу сюда!</a>
+                  </li>
             </ul>
-            <a href="#">Хочу сюда!</a></li>
+
+
+          </nav>
            </header>
 
     <main data-test="main">
@@ -96,7 +108,7 @@
     <li>
 
 
-     <a href="#"> <img src="#" alt="Вид на звезды сквозь горное ущелье">
+     <a href="#"> <img src="images/catalog/hotel-1.jpg" alt="Вид на звезды сквозь горное ущелье">
     </a>
 
 
@@ -115,7 +127,7 @@
 <li>
 
 
-  <p>   <a href="#"><img src="#" alt="Восход солнца из-за гор с выходящей радугой">
+  <p>   <a href="#"><img src="images/catalog/hotel-2.jpg" alt="Восход солнца из-за гор с выходящей радугой">
     </a></p>
 
 
@@ -135,7 +147,7 @@
 <li>
 
 
-    <p> <a href="#"><img src="#" alt="Горный хребет усыпанный зеленью.">
+    <p> <a href="#"><img src="images/catalog/hotel-3.jpg" alt="Горный хребет усыпанный зеленью.">
     </a></p>
 
 
@@ -153,7 +165,7 @@
 
 
 <li>
-   <p><a href="#"><img src="#" alt="Ночной вид на горный хребет в оранжевом отливе.">
+   <p><a href="#"><img src="images/catalog/hotel-4.jpg" alt="Ночной вид на горный хребет в оранжевом отливе.">
     </a></p>
 
 
@@ -202,15 +214,15 @@
 </button>
 </form>
       </section>
-      <ul>
-        <li><a href="https:vk.ru/">VK</a></li>
-        <li><a href="https:Telegram.org/">Telegram</a></li>
-        <li><a href="https:Youtube.ru/">Youtube</a></li>
+      <ul class="contacts">
+        <li class="contacts-item"><a class="contacts-name" href="https:vk.ru/">VK</a></li>
+        <li class="contacts-item"><a class="contacts-name" href="https:Telegram.org/">Telegram</a></li>
+        <li class="contacts-item"><a class="contacts-name" href="https:Youtube.ru/">Youtube</a></li>
 
 
       </ul>
-      <a href="#">+7 (812) 812-12-12</a>
-      <a href="https:htmlacademy.ru/"><img src="#" alt="Логотип HTML ACADEMY">
+      <a class="contacts-phone" href="#">+7 (812) 812-12-12</a>
+      <a class="contacts-adress" href="https:htmlacademy.ru/"><img src="#" alt="Логотип HTML ACADEMY">
         </a>
     </footer>
   </body>

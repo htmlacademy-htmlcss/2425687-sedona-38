@@ -6,80 +6,97 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header data-test="header" >
-       <a href="index.html"> <img src="#" alt="Логотип CITY OF SEDONA">
+    <header class="page-header" data-test="header" >
+      <nav class="navigation"
+       <a href="index.html"> <img class="logo" src="images/index/logo.svg" alt="Логотип CITY OF SEDONA">
         </a>
-        <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О Cедоне</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+        <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">Главная</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">О Cедоне</a></li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a></li>
             </ul>
-            <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#">12</a></li>
+            <ul class="navigation-list navigation-user">
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+                  </li>
+                <li class="navigation-item">
+                  <a class="navigation-link" href="#">12</a></li>
+                  <li class="navigation-item"></li>>
+                      <a class="navigation-link" href="#">Хочу сюда!</a>
+                  </li>
             </ul>
-            <a href="#">Хочу сюда!</a></li>
-            <h1 class="visually-hidden">Sedona</h1>
+
+
+          </nav>
            </header>
 
-    <ul data-test="main">
+    <main class="main-index" data-test="main">
+        <h1 class="visually-hidden">Sedona</h1>
       <p><img src="#" alt="Welcome to the gorgeous Sedona,because the Grand Canyon sucks!"</p>
         <h2>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
         <p>Рассмотрим причины,по которым Седона круче,чем Гранд-Каньон!</p>
-      <ul>
-        <li>НАСТОЯЩИЙ ГОРОДОК
+        <section class="advantages-list">
+          <h3 class="visually-hidden">Преимущества</h3>
+      <ul class="advantages-list">
+        <li class="advantages-item">НАСТОЯЩИЙ ГОРОДОК
         <p>Седона-не атракцион для туристов,там течет своя жизнь</p>
         <img src="#" alt=" Настоящий городок">
         </li>
 
 
-        <li>НЕБОЛЬШАЯ ПЛОЩАДЬ
+        <li class="advantages-item">НЕБОЛЬШАЯ ПЛОЩАДЬ
         <p>Все достопримечательности находятся очень близко</p>
         <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
         </li>
 
-            <li>Красивая дорога
+            <li class="advantages-item">Красивая дорога
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
             </li>
 
-                <li>Мало туристов
+                <li class="advantages-item">Мало туристов
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
                 <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
                 </li>
 
-                <li><img src="#" alt="Горы">
+                <li class="advantages-item"><img src="#" alt="Горы">
 
                     <p>Там есть мост дьявола</p>
                     <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                     <p>Седона-не аттракцион для туристов, там течет своя жизнь</p></li>
                     </ul>
-                    <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+                  </section>
+                  <section class="services"
+                    <h4 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h4>
                     <p>Опытный персонал и качественное обслуживание!</p>
 
-                    <ul>
-                        <li> <img src="#" alt="Жилье">
-                           <p>Жилье</p>
-                            <p>Рекомендуем пожить в настоящем мотеле, </p></li>
 
-                                <li> <img src="#" alt="Еда">
-                                   <p>Еда</p>
-                                    <p>Всегда заказывайте
+                    <ul class="services-list">
+                        <li class="services-item"> <img src="images/index/жилье.svg" alt="Жилье">
+                           <p class="services-name">Жилье</p>
+                            <p class="services-description">Рекомендуем пожить в настоящем мотеле, </p></li>
+
+                                <li class="services-item"> <img src="images/index/еда.svg" alt="Еда">
+                                   <p  class="services-name">Еда</p>
+                                    <p class="services-description">Всегда заказывайте
                                         топовый фирменный бургер, </p></li>
-                                        <li> <img src="#" alt="Сувениры">
-                                            <p>Сувениры</p>
-                                             <p>Не только китайского,
+                                        <li class="services-item"> <img src="images/index/сувениры.svg" alt="Сувениры">
+                                            <p  class="services-name">Сувениры</p>
+                                             <p class="services-description">Не только китайского,
                                                 но и настоящего местного производства! </p></li>
                                              </ul>
-                                             <h3>Заинтересовались?</h3>
+                                             <h5>Заинтересовались?</h5>
                                              <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                                             <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+                                             <a class="button-seach" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
 
 
     </main>
     <footer data-test="footer">
       <section class="newsletter">
-        <h4 class="page-footer-title">Подпишитесь на рассылку</h4>
+        <h6 class="page-footer-title">Подпишитесь на рассылку</h6>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="newsletter-form" action="https:htmlacademy.ru/" method="post">
 
@@ -91,15 +108,15 @@
 </form>
       </section>
 
-      <ul>
-        <li><a href="https:vk.ru/">VK</a></li>
-        <li><a href="https:Telegram.org/">Telegram</a></li>
-        <li><a href="https:Youtube.ru/">Youtube</a></li>
+      <ul class="contacts">
+        <li class="contacts-item"><a class="contacts-name" href="https:vk.ru/">VK</a></li>
+        <li class="contacts-item"><a class="contacts-name" href="https:Telegram.org/">Telegram</a></li>
+        <li class="contacts-item"><a class="contacts-name" href="https:Youtube.ru/">Youtube</a></li>
 
 
       </ul>
-      <a href="#">+7 (812) 812-12-12</a>
-      <a href="https:htmlacademy.ru/"><img src="#" alt="Логотип HTML ACADEMY">
+      <a class="contacts-phone" href="#">+7 (812) 812-12-12</a>
+      <a class="contacts-adress" href="https:htmlacademy.ru/"><img src="#" alt="Логотип HTML ACADEMY">
         </a>
     </footer>
   </body>
