@@ -2,13 +2,13 @@
 <html lang="ru">
   <meta charset="utf-8">
   <head>
-    <title>Sedona</title>
+    <title>Католог</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="page-header" data-test="header" >
       <nav class="navigation"
-       <a href="index.html"> <img class="logo" width="140" height="70" src="images/index/logo.svg" alt="Логотип CITY OF SEDONA">
+       <a href="index.html"> <img class="logo" src="images/catalog/logo.svg" width="140" height="70" alt="Логотип CITY OF SEDONA">
         </a>
         <ul class="navigation-list">
             <li class="navigation-item">
@@ -33,71 +33,178 @@
           </nav>
            </header>
 
-    <main class="main-index" data-test="main">
-        <h1 class="visually-hidden">Sedona</h1>
-      <p><img src="images/index/mountains.jpg" width="1200" height="485" alt="Welcome to the gorgeous Sedona,because the Grand Canyon sucks!">
-        <img src="images/index/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona,because the Grand Canyon sucks!"></p>
-        <h2>СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
-        <p>Рассмотрим причины,по которым Седона круче,чем Гранд-Каньон!</p>
-        <section class="advantages-list">
-          <h3 class="visually-hidden">Преимущества</h3>
-      <ul class="advantages-list">
-        <li class="advantages-item">НАСТОЯЩИЙ ГОРОДОК
-        <p>Седона-не атракцион для туристов,там течет своя жизнь</p>
-        <img src="images/index/photo-1.jpg" width="800" height="385" alt=" Настоящий городок">
-        </li>
+    <main data-test="main">
+      <p><img class="logo" src="images/catalog/filtr.png" width="1200" height="412" alt="фон"></p>
+      <h1>Гостиницы Седоны</h1>
+      <ul>
+        <li>Вернуться на главную</li>
+        <li><a href="catalog.html">Гостиницы</a></li>
+      </ul>
+
+      <h1>Фильтр поиска жилья</h1>
+      <form name="Фильтр" action="https://echo.htmlacademy.ru/courses" method="post">
+
+<section class="filter">
+       <fieldset> <legend>Инфраструктура:</legend>
+<ul>
+       <li class="filter-item"> <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Бассейн</label></li>
+          <li class="filter-item"><input type="checkbox" name="subscribe" id="subscribe-field" checked>
+            <label for="subscribe-field">Парковка</label></li>
+           <li class="filter-item"> <input type="checkbox" name="subscribe" id="subscribe-field">
+              <label for="subscribe-field">Wi-Fi</label></li>
+</ul>
+            </fieldset>
+<fieldset>
+  <legend>Тип жилья:</legend>
+  <ul>
+       <li class="filter-item"> <input type="checkbox" name="subscribe" id="subscribe-field" checked>
+          <label for="subscribe-field">Гостиница</label></li>
 
 
-        <li class="advantages-item">НЕБОЛЬШАЯ ПЛОЩАДЬ
-        <p>Все достопримечательности находятся очень близко</p>
-        <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
-        </li>
-
-            <li class="advantages-item">Красивая дорога
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
-            </li>
-
-                <li class="advantages-item">Мало туристов
-                <p>Большинство едет в Гранд Каньон и толпится там</p>
-                <p>Седона-не аттракцион для туристов, там течет своя жизнь</p>
-                </li>
-
-                <li class="advantages-item"><img src="images/index/photo-2.jpg" width="800" height="385" alt="Горы">
-
-                    <p>Там есть мост дьявола</p>
-                    <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-                    <p>Седона-не аттракцион для туристов, там течет своя жизнь</p></li>
-                    </ul>
-                  </section>
-                  <section class="services"
-                    <h4 class="services-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h4>
-                    <p>Опытный персонал и качественное обслуживание!</p>
+        <li class="filter-item"><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Мотель</label></li>
 
 
-                    <ul class="services-list">
-                        <li class="services-item"> <img src="images/index/house.svg" width="75" height="72" alt="Жилье">
-                           <p class="services-name">Жилье</p>
-                            <p class="services-description">Рекомендуем пожить в настоящем мотеле, </p></li>
 
-                                <li class="services-item"> <img src="images/index/food.svg" width="75" height="72" alt="Еда">
-                                   <p  class="services-name">Еда</p>
-                                    <p class="services-description">Всегда заказывайте
-                                        топовый фирменный бургер, </p></li>
-                                        <li class="services-item"> <img src="images/index/souvenirs.svg" width="75" height="72" alt="Сувениры">
-                                            <p  class="services-name">Сувениры</p>
-                                             <p class="services-description">Не только китайского,
-                                                но и настоящего местного производства! </p></li>
-                                             </ul>
-                                             <h5>Заинтересовались?</h5>
-                                             <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                                             <a class="button-seach" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+       <li class="filter-item"><input type="checkbox" name="subscribe" id="subscribe-field">
+          <label for="subscribe-field">Апартаменты</label></li>
+  </ul>
+        </fieldset>
+</section>
+
+    <p>Стоимость, ₽</p>
+    <p>
+    <div class="price-input">
+      <div class="field">
+        <span>От</span>
+        <input type="number" class="input-min" value="0">
+    </p>
+      <div class="field">
+        <span>До</span>
+        <input type="number" class="input-max" value="9000">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+
+  </div>
+  <button class="button-submit" type="submit">Применить</button>
+  <button class="button-reset" type="button">Сбросить</button>
+  </form>
+  <h2>Найдено гостиниц:38<h2>
+    <form class="sorting" action="https://htmlacademy.ru/" method="get">
+      <select class="select-control" aria-label="Сортировка">
+        <option selected="">Сначала дешевые</option>
+        <option>Сначала дороже</option>
+        <option>По популярности</option>
+      </select>
+  </form>
+  <ul>
+    <li><button class="button-submit" type="submit">Мелкие значки</button></li>
+    <li><button class="button-submit" type="submit">Крупные значки</button></li>
+    <li><button class="button-submit" type="submit">Содержимое</button></li>
+  </ul>
+  <ul>
+    <li>
+
+
+     <a href="#"> <img src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Вид на звезды сквозь горное ущелье">
+    </a>
+
+
+  <p>
+    <a href="#">Amara Resort&Spa</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 4000</span></p>
+  <ul>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">4 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 8.5</button></li>
+  </ul>
+
+<li>
+
+
+  <p>   <a href="#"><img src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Восход солнца из-за гор с выходящей радугой">
+    </a></p>
+
+
+  <p>
+    <a href="#">Villas at Poco Diablo</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 5000</span></p>
+  <ul>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">4 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 9.2</button></li>
+  </ul>
+
+
+<li>
+
+
+    <p> <a href="#"><img src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Горный хребет усыпанный зеленью.">
+    </a></p>
+
+
+  <p>
+    <a href="#">Desert Quail Inn</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 2500</span></p>
+  <ul>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">3 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 6.9</button></li>
+  </ul>
+
+
+<li>
+   <p><a href="#"><img src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Ночной вид на горный хребет в оранжевом отливе.">
+    </a></p>
+
+
+  <p>
+    <a href="#">GreenTree Inn</a></li>
+  </p>
+  <p>Гостиница</p>
+  <p><span>От 1500</span></p>
+  <ul>
+    <li><button class="button-submit" type="submit">Подробнее</button></li>
+    <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
+    <li><button class="button-submit" type="submit">2 звезды</button></li>
+    <li><button class="button-submit" type="submit">рейтинг 5.0</button></li>
+  </ul>
+
+</ul>
+<ul>
+  <li>
+    <a href="#"> 1</a>
+  </li>
+  <li>
+    <a href="#"> 2</a>
+  </li><li>
+    <a href="#"> 3</a>
+  </li><li>
+    <a href="#"> 4</a>
+  </li><li>
+    <a href="#"> ...</a>
+  </li><li>
+    <a href="#"> 10</a>
+  </li>
+</ul>
 
 
     </main>
     <footer data-test="footer">
       <section class="newsletter">
-       <p> <img src="images/index/fon subscription.jpg" width="1200" height="414.86" alt="фон"></p>
         <h4 class="page-footer-title">Подпишитесь на рассылку</h4>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
 <form class="newsletter-form" action="https:htmlacademy.ru/" method="post">
