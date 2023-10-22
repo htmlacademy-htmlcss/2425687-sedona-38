@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="container">
   <header class="page-header" data-test="header">
     <nav class="navigation" <a href="index.html"> <img class="logo" src="images/catalog/logo.svg" width="140"
         height="70" alt="Логотип CITY OF SEDONA">
@@ -40,17 +40,18 @@
   </header>
 
   <main data-test="main">
-    <p><img class="logo" src="images/catalog/filtr.png" width="1200" height="412" alt="фон"></p>
+<section class="filter">
     <h1>Гостиницы Седоны</h1>
     <ul>
       <li>Вернуться на главную</li>
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
 
-    <h1>Фильтр поиска жилья</h1>
-    <form name="Фильтр" action="https://echo.htmlacademy.ru/courses" method="post">
+    <h1 class="visually-hidden">Фильтр поиска жилья</h1>
+    <form  name="Фильтр" action="https://echo.htmlacademy.ru/courses" method="post">
 
-      <section class="filter">
+      <div class="filter1" >
+        <div class="filter2">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -66,6 +67,8 @@
 
           </ul>
         </fieldset>
+           </div>
+           <div class="filter3">
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
@@ -85,28 +88,28 @@
             </li>
           </ul>
         </fieldset>
-      </section>
-
-      <p>Стоимость, ₽</p>
-      <p>
-      <div class="price-input">
-        <div class="field">
-          <span>От</span>
-          <input type="number" class="input-min" value="0">
-          </p>
-          <div class="field">
+      </div>
+      </div>
+      <div class="filter4">
+         <p>Стоимость, ₽</p>
+         <p>
+             <div class="field">
+             <span>От</span>
+             <input type="number" class="input-min" value="0">
+           </div></p>
+           <div class="field">
             <span>До</span>
             <input type="number" class="input-max" value="9000">
           </div>
-        </div>
-        <div class="slider">
+          </div>
+          <div class="slider">
           <div class="progress"></div>
         </div>
-
       </div>
       <button class="button-submit" type="submit">Применить</button>
       <button class="button-reset" type="button">Сбросить</button>
     </form>
+</section>
     <h2>Найдено гостиниц:38<h2>
         <form class="sorting" action="https://htmlacademy.ru/" method="get">
           <select class="select-control" aria-label="Сортировка">
@@ -116,11 +119,31 @@
           </select>
         </form>
         <ul>
-          <li><button class="button-submit" type="submit">Мелкие значки</button></li>
-          <li><button class="button-submit" type="submit">Крупные значки</button></li>
-          <li><button class="button-submit" type="submit">Содержимое</button></li>
+          <li><button class="button-submit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M4 0H0V6H4V0Z" fill="black"/>
+            <path d="M16 0H12V6H16V0Z" fill="black"/>
+            <path d="M10 0H6V6H10V0Z" fill="black"/>
+            <path d="M4 8H0V14H4V8Z" fill="black"/>
+            <path d="M16 8H12V14H16V8Z" fill="black"/>
+            <path d="M10 8H6V14H10V8Z" fill="black"/>
+            </svg></button></li>
+          <li><button class="button-submit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M16 12H0V14H16V12Z" fill="black"/>
+            <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+          </svg></button></li>
+          <li><button class="button-submit" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
+            <path d="M2 0H0V2H2V0Z" fill="black"/>
+            <path d="M16 0H4V2H16V0Z" fill="black"/>
+            <path d="M2 4H0V6H2V4Z" fill="black"/>
+            <path d="M16 4H4V6H16V4Z" fill="black"/>
+            <path d="M2 8H0V10H2V8Z" fill="black"/>
+            <path d="M16 8H4V10H16V8Z" fill="black"/>
+            <path d="M2 12H0V14H2V12Z" fill="black"/>
+            <path d="M16 12H4V14H16V12Z" fill="black"/>
+          </svg></button></li>
         </ul>
-        <ul>
+        <ul class="hotel">
+          <div class="hotel1">
           <li>
 
 
@@ -137,12 +160,13 @@
           <p><span>От 4000</span></p>
           <ul>
             <li><button class="button-submit" type="submit">Подробнее</button></li>
-            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
-            <li><button class="button-submit" type="submit">4 звезды</button></li>
+            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button>
+            <p>4 звезды</p></li>
             <li><button class="button-submit" type="submit">рейтинг 8.5</button></li>
           </ul>
-
-          <li>
+</div>
+<div class="hotel2">
+<li>
 
 
             <p> <a href="#"><img src="images/catalog/hotel-2.jpg" width="300" height="212"
@@ -158,13 +182,13 @@
           <p><span>От 5000</span></p>
           <ul>
             <li><button class="button-submit" type="submit">Подробнее</button></li>
-            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
-            <li><button class="button-submit" type="submit">4 звезды</button></li>
+            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button>
+            <p>4 звезды</p></li>
             <li><button class="button-submit" type="submit">рейтинг 9.2</button></li>
           </ul>
 
-
-          <li>
+</div>
+          <li class="hotel3 ">
 
 
             <p> <a href="#"><img src="images/catalog/hotel-3.jpg" width="300" height="212"
@@ -180,13 +204,13 @@
           <p><span>От 2500</span></p>
           <ul>
             <li><button class="button-submit" type="submit">Подробнее</button></li>
-            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
-            <li><button class="button-submit" type="submit">3 звезды</button></li>
+            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button>
+            <p>3 звезды</p></li>
             <li><button class="button-submit" type="submit">рейтинг 6.9</button></li>
           </ul>
 
 
-          <li>
+          <li class="hotel4">
             <p><a href="#"><img src="images/catalog/hotel-4.jpg" width="300" height="212"
                   alt="Ночной вид на горный хребет в оранжевом отливе.">
               </a></p>
@@ -200,8 +224,8 @@
           <p><span>От 1500</span></p>
           <ul>
             <li><button class="button-submit" type="submit">Подробнее</button></li>
-            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button></li>
-            <li><button class="button-submit" type="submit">2 звезды</button></li>
+            <li><button class="button-submit" type="submit">В ИЗБРАННОЕ</button>
+            <p>2 звезды</p></li>
             <li><button class="button-submit" type="submit">рейтинг 5.0</button></li>
           </ul>
 
@@ -230,10 +254,10 @@
 
   </main>
   <footer data-test="footer">
-    <section class="newsletter">
+    <div class="subscribe">
       <h4 class="page-footer-title">Подпишитесь на рассылку</h4>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="newsletter-form" action="https:htmlacademy.ru/" method="post">
+      <form class="subscribe-form" action="https:htmlacademy.ru/" method="post">
 
 
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
@@ -242,8 +266,9 @@
 
         </button>
       </form>
-    </section>
-    <ul class="contacts">
+    </div>
+    <div class="contacts">
+    <ul>
       <li class="contacts-item"><a class="contacts-name" href="https:vk.ru/"><svg xmlns="http://www.w3.org/2000/svg"
             width="24" height="14" viewBox="0 0 24 14" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -304,6 +329,7 @@
           fill="black" />
       </svg>
     </a>
+    </div>
   </footer>
 </body>
 
